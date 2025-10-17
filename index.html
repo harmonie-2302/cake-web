@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Beauté Cake</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   
+</head>
+<body>
+    <header>
+        <!--PARTIE ENTETE-->
+        <div class="burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+        <nav class="navbar">
+              <img src="assets/pict/IMG-20250713-WA0059.jpg" alt="">
+              <div>
+              <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Accueil</a>
+                </li>
+                
+                  <li class="nav-item">
+                    <a href="#about" class="nav-link">A propos</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                  <li class="nav-item">
+                    <a href="#panier" class="nav-link">Panier</a>
+                </li>
+                    <li class="nav-item">
+                    <a href="#galerie" class="nav-link">Galerie</a>
+                </li>
+            
+                    <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+              </ul>
+              </div>
+        </nav>
+    </header>
+    <main>
+        <!--PARTIE ACCUEIL-->
+        <section id="home">
+           <div>
+             <h2 >Beauté Cake</h2>
+                 <p >Offrez plus qu'un goût: une expérience sucrée, 
+                      </br>raffinée et inoubliable à chaque bouchée. </p>
+                          </br>
+                            <div class="btn">
+                          <div >
+                <a href="#menu" >Commandez ici</a>
+             </div>
+              <a href="#">Contactez nous</a>
+             </div>
+           </div>
+              <img src="assets/pict/harm.png" alt="Description de l'image 1">
+           </section>
+           <!--PARTIE A PROPOS-->
+           <section id="about">
+               <img src="assets/pict/IMG-20250713-WA0073.jpg" width="300px" alt="">
+             <div class="contenu">
+             <h1>A propos de Beauté Cake</h1>
+             <p>Chez Beauté Cake, nous croyons que chaque gâteau raconte une histoire.
+             </br>
+             Notre secret? L'amour du chocolat, la douceur de la vanille et la créativité sans limites.
+            </br>
+            Chaque recette est pensée pour ravir vos papilles, que ce soit pour anniversaire, 
+          </br>
+          un mariage ou simplement pour se faire plaisir.
+             <br>
+             Nous engageons à offrir des produits:
+             <ul>
+              <li>100% faits maison</li>
+              <li>A base d'ingrédients naturels</li>
+              <li>Inspirés des saveurs locales et internationales</li>
+             </ul>
+            </br>
+            Passez la porte de notre univers sucré, laissez-vous tenter par nos gâteaux, cupcakes, tartes et biscuits,
+          </br> et vivez une expérience gourmande inoubliable.
+        </br>
+        </br>
+        </br>
+          <a href="#">Visitez notre menu</a>
+          </p>
+             </div>
+             
+           </section>
+
+           <!--MENU DU SITE-->
+           <section id="menu">
+            <div class="gateau-menu">
+           <h2>MENU BEAUTE CAKE GATEAUX</h2>
+           <div  id="catalogue">
+            <div class="gateau">
+           <img src="assets/pict/IMG-20250714-WA0192.jpg" width="200px" alt="">
+              <h3>Gâteau anniversaire</h3>
+              <p>Riche et fondant</p>
+              <p>15$</p>
+              <button class="btn" onclick="ajouter('Gâteau anniversaire',15,this)">Ajoutez au panier &#x1F6D2; </button>
+            </div>
+            <div class="gateau">
+           <img src="assets/pict/IMG-20250714-WA0175.jpg" width="200px" alt="">
+              <h3>Gâteau anniversaire pour enfant</h3>
+              <p>Riche et fondant</p>
+              <p>Prix:20$</p>
+              <button class="btn" onclick="ajouter('Gâteau anniversaire pour enfant',15, this)">Ajoutez au panier &#x1F6D2; </button>
+            </div>
+             <div class="gateau">
+           <img src="assets/pict/IMG-20250714-WA0059.jpg" width="200px" alt="">
+              <h3>Gâteau au chocolat noir</h3>
+              <p>Riche et fondant</p>
+              <p>Prix:20$</p>
+              <button class="btn" onclick="ajouter('Gâteau au chocolat noir',15, this)">Ajoutez au panier &#x1F6D2; </button>
+            </div> 
+            <div class="gateau">
+           <img src="assets/pict/IMG-20250714-WA0050.jpg" width="200px" alt="">
+              <h3>Gâteau aux biscuits</h3>
+              <p>Riche et fondant</p>
+              <p> Prix:15$</p>
+              <button class="btn" onclick="ajouter('Gâteau au biscuits',15,this)">Ajoutez au panier &#x1F6D2; </button>
+            </div>
+             <div class="gateau">
+           <img src="assets/pict/cbb3fb268a074f0994491b5b5261bbd0.jpg"  width="200px" alt="">
+              <h3>Gâteau fan</h3>
+              <p>Riche et fondant</p>
+              <p> Prix:15$</p>
+              <button class="btn" onclick="ajouter(',Gâteau fan',15,this)">Ajoutez au panier &#x1F6D2; </button>
+            </div>
+            <div class="gateau">
+           <img src="assets/pict/IMG-20250714-WA0176 - Copie.jpg"  width="200px" alt="">
+              <h3>Gâteau Mariage</h3>
+              <p>Riche et fondant</p>
+              <p> Prix:15$</p>
+              <button class="btn" onclick="ajouter(',Gâteau Mariage',15,this)">Ajoutez au panier &#x1F6D2; </button>
+            </div>
+           </div>
+           </div>
+           <!--BISCUITS-->
+                   <div class="gateau-menu">
+           <h2>MENU BEAUTE CAKE BUISCUITS</h2>
+           <div  id="catalogue">
+            <div class="gateau">
+           <img src="assets/pict/Screenshot_20250802-210449_1.png" width="200px" alt="">
+              <h3>Biscuit au beurre seulement </h3>
+              <p>Riche et fondant</p>
+              <p>10 pièces à 5$</p>
+              <button class="btn" onclick="ajouter('Biscuit au beurre',5,this)">Ajoutez au panier &#x1F6D2; </button>
+            </div>
+            <div class="gateau">
+           <img src="assets/pict/Screenshot_20250802-210538_1.png" width="200px" alt="">
+              <h3>Biscuits sablés et cookies</h3>
+              <p>Riche et fondant</p>
+              <p>10 pièces à 10$</p>
+              <button class="btn" onclick="ajouter('Biscuits sablés et cookies',10, this)">Ajoutez au panier &#x1F6D2; </button>
+            </div>
+             <div class="gateau">
+           <img src="assets/pict/Screenshot_20250802-222019.png" width="200px" alt="">
+              <h3>Biscuit au bonbon </h3>
+              <p>Riche et fondant</p>
+              <p>10 pièces à 15$</p>
+              <button class="btn" onclick="ajouter('Biscuit au bonbon',15, this)">Ajoutez au panier &#x1F6D2; </button>
+            </div> 
+            <div class="gateau">
+           <img src="assets/pict/Screenshot_20250802-222302 - Copie.png" width="200px" alt="">
+              <h3>Biscuit au chocolat</h3>
+              <p>Riche et fondant</p>
+              <p> 1 à 5$</p>
+              <button class="btn" onclick="ajouter(' Biscuit au chocolat',5,this)">Ajoutez au panier &#x1F6D2; </button>
+            </div>
+             <div class="gateau">
+           <img src="assets/pict/Screenshot_20250802-210500_1.png"  width="200px" alt="">
+              <h3>Biscuit normal</h3>
+              <p>Riche et fondant</p>
+              <p> 5 pièces à 5$</p>
+              <button class="btn" onclick="ajouter('Biscuit normal',15,this)">Ajoutez au panier &#x1F6D2;</button>
+            </div>
+            <div class="gateau">
+           <img src="assets/pict/Screenshot_20250802-210428.png"  width="200px" alt="">
+              <h3>Biscuit nzuri</h3>
+              <p>Riche et fondant</p>
+              <p> 5 pièces à 2$</p>
+              <button class="btn" onclick="ajouter('Biscuit nzuri',2,this)">Ajoutez au panier &#x1F6D2;</button>
+            </div>
+           </div>
+           </div>
+
+           <div class="gateau-menu">
+           <h2>MENU BEAUTE CAKE GALETTES</h2>
+           <div  id="catalogue">
+            <div class="gateau">
+           <img src="assets/pict/Screenshot_20250802-222825.png" width="200px" alt="">
+              <h3>Galette en triangle </h3>
+              <p>Riche et fondant</p>
+              <p>10 pièces à 5$</p>
+              <button class="btn" onclick="ajouter('Galette en triangle',5,this)">Ajoutez au panier &#x1F6D2; </button>
+            </div>
+            <div class="gateau">
+           <img src="assets/pict/Screenshot_20250802-222513.png" width="200px" alt="">
+              <h3> Galettes biscuit </h3>
+              <p>Riche et fondant</p>
+              <p>5 pièces à 10$</p>
+              <button class="btn" onclick="ajouter(' Galettes biscuit',10, this)">Ajoutez au panier &#x1F6D2; </button>
+            </div>
+             <div class="gateau">
+           <img src="assets/pict/Screenshot_20250802-222627.png" width="200px" alt="">
+              <h3>Galette au chocolat </h3>
+              <p>Riche et fondant</p>
+              <p>1 pièces 2.5$</p>
+              <button class="btn" onclick="ajouter('Galette au chocolat',2.5, this)">Ajoutez au panier &#x1F6D2;</button>
+            </div> 
+            <div class="gateau">
+           <img src="assets/pict/Screenshot_20250802-222641.png" width="200px" alt="">
+              <h3>Galette au fraise</h3>
+              <p>Riche et fondant</p>
+              <p> 1 à 3$</p>
+              <button class="btn" onclick="ajouter(' Galette au fraise',3,this)">Ajoutez au panier &#x1F6D2; </button>
+            </div>
+             <div class="gateau">
+           <img src="assets/pict/Screenshot_20250802-222707.png"  width="200px" alt="">
+              <h3>Galette...</h3>
+              <p>Riche et fondant</p>
+              <p> 1 pièce à 5$</p>
+              <button class="btn" onclick="ajouter('Galette...',5,this)">Ajoutez au panier &#x1F6D2;</button>
+            </div>
+            <div class="gateau">
+           <img src="assets/pict/Screenshot_20250802-222453.png"  width="200px" alt="">
+              <h3>Cake</h3>
+              <p>Riche et fondant</p>
+              <p> 1 pièces à 2$</p>
+              <button class="btn" onclick="ajouter('Cake',2,this)">Ajoutez au panier &#x1F6D2; </button>
+            </div> 
+           </div>
+           </div>
+           </section>
+
+           <!--PARTIE PANIER-->
+           <section id="panier">
+           <h2>Votre panier </h2>
+           <ul id="liste-panier"></ul>
+           <p><strong>Total: $ <span id="total">0</span> </strong></p>
+           <button id="command" onclick="commander()">Commander</button>
+           </section>
+
+           <!--Galerie-->
+           <section id="galerie">
+            <h2>BIENVENUE DANS NOTRE PETIT MONDE DE SAVEURS</h2>
+            <div class="carousel" id="carrousel">
+         <div> <img src="assets/pict/IMG-20250712-WA0074 - Copie.jpg"  class="active" alt ="image 1"></div>
+         <div> <img src="assets/pict/IMG-20250714-WA0057.jpg"     class="active" alt="image 2"></div>
+        <div><img src="assets/pict/IMG-20250714-WA0208.jpg" class="active"  alt="image 3"></div>
+          <div><img src="assets/pict/IMG-20250714-WA0188.jpg" alt=""></div>
+          <div><img src="assets/pict/IMG-20250714-WA0191.jpg" alt=""></div>
+          <div><img src="assets/pict/IMG-20250714-WA0201.jpg" alt=""></div>
+          <div><img src="assets/pict/IMG-20250714-WA0206.jpg" alt=""></div>
+          <div><img src="assets/pict/IMG-20250715-WA0000.jpg" alt=""></div>
+          <div><img src="assets/pict/IMG-20250715-WA0004.jpg" alt=""></div>
+           <div> <video src="assets/pict/VID-20250714-WA0053.mp4" controls ></video></div> 
+            <div> <video src="assets/pict/VID-20250714-WA0054.mp4" controls ></video></div> 
+             <div> <video src="assets/pict/VID-20250714-WA0055.mp4" controls ></video></div> 
+ <button  > <a href="#menu">Commandez menant</a></button>
+          </div>
+        </section>
+
+        <section  id="contact">
+          <div class="part">
+   <h3 >Beauté Cake le meilleur de tout le temps</h3>
+  </br>
+</br>
+  <div>
+    <span > &#x1F4DE; Numéro de téléphone : </span>
+   +243 854832846
+</div>
+<div>
+    <span>&#x2709; Notre mail: </span>
+    beautecake@gmail.com
+</div>
+<div>
+    <span >&#x1F4CD; Notre adresse: </span>
+    Bukavu
+</div>
+</div>
+<div class="parti">
+<img src="assets/pict/IMG-20240125-WA0013.jpg" alt="" >
+<h4>Votre cheffe en patissérie</h4>
+</div>
+            <div class="contact-container">
+              <h2>Contactez-nous</h2>
+                <form id="contact-form" novalidate method="POST" action="ajout.php" >
+                    <div class="form-control">
+                        <input type="text" id="name" name="name" 
+                        placeholder="Votre nom" required>
+                        </div>
+
+                        <div class="form-control">
+                        <input type="email" id="email" name="email" 
+                        placeholder="Votre email" required>
+
+                       
+
+                    </div>
+                    <div class="form-control">
+                        <input type="tel" id="num" name="num" 
+                        placeholder="Votre numéro de téléphone" required>
+
+                      
+
+                    </div>
+                              
+                    <div class="form-control">
+                        <textarea id="message" name="message" rows="5" 
+                        placeholder="Votre message" required></textarea>
+
+                        
+                    </div>
+                    
+                    <button type="submit">Envoyer</button>
+
+                </form>
+                 
+                </div>
+          
+
+
+          
+        </section>
+    </main>
+
+     <script src="iziToast.min (1).js"></script>
+    <script src="style.js" ></script>
+    <footer>
+             <p id="footer">Copyright &copy; 2025 harmy-beauté-cake</p>  
+        </footer>
+</body>
+ 
+</html>
