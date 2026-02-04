@@ -1,342 +1,322 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8" />
-    <title>Beauté Cake</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
-   
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauté Cake - Des Gâteaux Sains Pour Vous</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
+
 <body>
-    <header>
-        <!--PARTIE ENTETE-->
-        <div class="burger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            
-        <nav class="navbar">
-              <img src="assets/pict/IMG-20250713-WA0059.jpg" alt="">
-              <div>
-              <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Accueil</a>
-                </li>
-                
-                  <li class="nav-item">
-                    <a href="#about" class="nav-link">A propos</a>
-                </li>
-                 <li class="nav-item">
-                    <a href="#menu" class="nav-link">Menu</a>
-                </li>
-                  <li class="nav-item">
-                    <a href="#panier" class="nav-link">Panier</a>
-                </li>
-                    <li class="nav-item">
-                    <a href="#galerie" class="nav-link">Galerie</a>
-                </li>
-            
-                    <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-              </ul>
-              </div>
-        </nav>
-    </header>
-    <main>
-        <!--PARTIE ACCUEIL-->
-        <section id="home">
-           <div>
-             <h2 >Beauté Cake</h2>
-                 <p >Offrez plus qu'un goût: une expérience sucrée, 
-                      </br>raffinée et inoubliable à chaque bouchée. </p>
-                          </br>
-                            <div class="btn">
-                          <div >
-                <a href="#menu" >Commandez ici</a>
-             </div>
-              <a href="#">Contactez nous</a>
-             </div>
-           </div>
-              <img src="assets/pict/harm.png" alt="Description de l'image 1">
-           </section>
-           <!--PARTIE A PROPOS-->
-           <section id="about">
-               <img src="assets/pict/IMG-20250713-WA0073.jpg" width="300px" alt="">
-             <div class="contenu">
-             <h1>A propos de Beauté Cake</h1>
-             <p>Chez Beauté Cake, nous croyons que chaque gâteau raconte une histoire.
-             </br>
-             Notre secret? L'amour du chocolat, la douceur de la vanille et la créativité sans limites.
-            </br>
-            Chaque recette est pensée pour ravir vos papilles, que ce soit pour anniversaire, 
-          </br>
-          un mariage ou simplement pour se faire plaisir.
-             <br>
-             Nous engageons à offrir des produits:
-             <ul>
-              <li>100% faits maison</li>
-              <li>A base d'ingrédients naturels</li>
-              <li>Inspirés des saveurs locales et internationales</li>
-             </ul>
-            </br>
-            Passez la porte de notre univers sucré, laissez-vous tenter par nos gâteaux, cupcakes, tartes et biscuits,
-          </br> et vivez une expérience gourmande inoubliable.
-        </br>
-        </br>
-        </br>
-          <a href="#">Visitez notre menu</a>
-          </p>
-             </div>
-             
-           </section>
 
-           <!--MENU DU SITE-->
-           <section id="menu">
-            <div class="gateau-menu">
-           <h2>MENU BEAUTE CAKE GATEAUX</h2>
-           <div  id="catalogue">
-            <div class="gateau">
-           <img src="assets/pict/IMG-20250714-WA0192.jpg" width="200px" alt="">
-              <h3>Gâteau anniversaire</h3>
-              <p>Riche et fondant</p>
-              <p>15$</p>
-              <button class="btn" onclick="ajouter('Gâteau anniversaire',15,this)">Ajoutez au panier &#x1F6D2; </button>
-            </div>
-            <div class="gateau">
-           <img src="assets/pict/IMG-20250714-WA0175.jpg" width="200px" alt="">
-              <h3>Gâteau anniversaire pour enfant</h3>
-              <p>Riche et fondant</p>
-              <p>Prix:20$</p>
-              <button class="btn" onclick="ajouter('Gâteau anniversaire pour enfant',15, this)">Ajoutez au panier &#x1F6D2; </button>
-            </div>
-             <div class="gateau">
-           <img src="assets/pict/IMG-20250714-WA0059.jpg" width="200px" alt="">
-              <h3>Gâteau au chocolat noir</h3>
-              <p>Riche et fondant</p>
-              <p>Prix:20$</p>
-              <button class="btn" onclick="ajouter('Gâteau au chocolat noir',15, this)">Ajoutez au panier &#x1F6D2; </button>
-            </div> 
-            <div class="gateau">
-           <img src="assets/pict/IMG-20250714-WA0050.jpg" width="200px" alt="">
-              <h3>Gâteau aux biscuits</h3>
-              <p>Riche et fondant</p>
-              <p> Prix:15$</p>
-              <button class="btn" onclick="ajouter('Gâteau au biscuits',15,this)">Ajoutez au panier &#x1F6D2; </button>
-            </div>
-             <div class="gateau">
-           <img src="assets/pict/cbb3fb268a074f0994491b5b5261bbd0.jpg"  width="200px" alt="">
-              <h3>Gâteau fan</h3>
-              <p>Riche et fondant</p>
-              <p> Prix:15$</p>
-              <button class="btn" onclick="ajouter(',Gâteau fan',15,this)">Ajoutez au panier &#x1F6D2; </button>
-            </div>
-            <div class="gateau">
-           <img src="assets/pict/IMG-20250714-WA0176 - Copie.jpg"  width="200px" alt="">
-              <h3>Gâteau Mariage</h3>
-              <p>Riche et fondant</p>
-              <p> Prix:15$</p>
-              <button class="btn" onclick="ajouter(',Gâteau Mariage',15,this)">Ajoutez au panier &#x1F6D2; </button>
-            </div>
-           </div>
-           </div>
-           <!--BISCUITS-->
-                   <div class="gateau-menu">
-           <h2>MENU BEAUTE CAKE BUISCUITS</h2>
-           <div  id="catalogue">
-            <div class="gateau">
-           <img src="assets/pict/Screenshot_20250802-210449_1.png" width="200px" alt="">
-              <h3>Biscuit au beurre seulement </h3>
-              <p>Riche et fondant</p>
-              <p>10 pièces à 5$</p>
-              <button class="btn" onclick="ajouter('Biscuit au beurre',5,this)">Ajoutez au panier &#x1F6D2; </button>
-            </div>
-            <div class="gateau">
-           <img src="assets/pict/Screenshot_20250802-210538_1.png" width="200px" alt="">
-              <h3>Biscuits sablés et cookies</h3>
-              <p>Riche et fondant</p>
-              <p>10 pièces à 10$</p>
-              <button class="btn" onclick="ajouter('Biscuits sablés et cookies',10, this)">Ajoutez au panier &#x1F6D2; </button>
-            </div>
-             <div class="gateau">
-           <img src="assets/pict/Screenshot_20250802-222019.png" width="200px" alt="">
-              <h3>Biscuit au bonbon </h3>
-              <p>Riche et fondant</p>
-              <p>10 pièces à 15$</p>
-              <button class="btn" onclick="ajouter('Biscuit au bonbon',15, this)">Ajoutez au panier &#x1F6D2; </button>
-            </div> 
-            <div class="gateau">
-           <img src="assets/pict/Screenshot_20250802-222302 - Copie.png" width="200px" alt="">
-              <h3>Biscuit au chocolat</h3>
-              <p>Riche et fondant</p>
-              <p> 1 à 5$</p>
-              <button class="btn" onclick="ajouter(' Biscuit au chocolat',5,this)">Ajoutez au panier &#x1F6D2; </button>
-            </div>
-             <div class="gateau">
-           <img src="assets/pict/Screenshot_20250802-210500_1.png"  width="200px" alt="">
-              <h3>Biscuit normal</h3>
-              <p>Riche et fondant</p>
-              <p> 5 pièces à 5$</p>
-              <button class="btn" onclick="ajouter('Biscuit normal',15,this)">Ajoutez au panier &#x1F6D2;</button>
-            </div>
-            <div class="gateau">
-           <img src="assets/pict/Screenshot_20250802-210428.png"  width="200px" alt="">
-              <h3>Biscuit nzuri</h3>
-              <p>Riche et fondant</p>
-              <p> 5 pièces à 2$</p>
-              <button class="btn" onclick="ajouter('Biscuit nzuri',2,this)">Ajoutez au panier &#x1F6D2;</button>
-            </div>
-           </div>
-           </div>
+  <!-- HEADER / NAVIGATION -->
+  <header>
+    <div class="logo">
+      <img src="assets/pict/harm.png" alt="Logo">
+      <h1>Beauté Cake</h1>
+    </div>
 
-           <div class="gateau-menu">
-           <h2>MENU BEAUTE CAKE GALETTES</h2>
-           <div  id="catalogue">
-            <div class="gateau">
-           <img src="assets/pict/Screenshot_20250802-222825.png" width="200px" alt="">
-              <h3>Galette en triangle </h3>
-              <p>Riche et fondant</p>
-              <p>10 pièces à 5$</p>
-              <button class="btn" onclick="ajouter('Galette en triangle',5,this)">Ajoutez au panier &#x1F6D2; </button>
-            </div>
-            <div class="gateau">
-           <img src="assets/pict/Screenshot_20250802-222513.png" width="200px" alt="">
-              <h3> Galettes biscuit </h3>
-              <p>Riche et fondant</p>
-              <p>5 pièces à 10$</p>
-              <button class="btn" onclick="ajouter(' Galettes biscuit',10, this)">Ajoutez au panier &#x1F6D2; </button>
-            </div>
-             <div class="gateau">
-           <img src="assets/pict/Screenshot_20250802-222627.png" width="200px" alt="">
-              <h3>Galette au chocolat </h3>
-              <p>Riche et fondant</p>
-              <p>1 pièces 2.5$</p>
-              <button class="btn" onclick="ajouter('Galette au chocolat',2.5, this)">Ajoutez au panier &#x1F6D2;</button>
-            </div> 
-            <div class="gateau">
-           <img src="assets/pict/Screenshot_20250802-222641.png" width="200px" alt="">
-              <h3>Galette au fraise</h3>
-              <p>Riche et fondant</p>
-              <p> 1 à 3$</p>
-              <button class="btn" onclick="ajouter(' Galette au fraise',3,this)">Ajoutez au panier &#x1F6D2; </button>
-            </div>
-             <div class="gateau">
-           <img src="assets/pict/Screenshot_20250802-222707.png"  width="200px" alt="">
-              <h3>Galette...</h3>
-              <p>Riche et fondant</p>
-              <p> 1 pièce à 5$</p>
-              <button class="btn" onclick="ajouter('Galette...',5,this)">Ajoutez au panier &#x1F6D2;</button>
-            </div>
-            <div class="gateau">
-           <img src="assets/pict/Screenshot_20250802-222453.png"  width="200px" alt="">
-              <h3>Cake</h3>
-              <p>Riche et fondant</p>
-              <p> 1 pièces à 2$</p>
-              <button class="btn" onclick="ajouter('Cake',2,this)">Ajoutez au panier &#x1F6D2; </button>
-            </div> 
-           </div>
-           </div>
-           </section>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link active">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a href="#menu" class="nav-link">Boutique</a>
+        </li>
+        <li class="nav-item">
+          <a href="#promo" class="nav-link">Vedettes</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-           <!--PARTIE PANIER-->
-           <section id="panier">
-           <h2>Votre panier </h2>
-           <ul id="liste-panier"></ul>
-           <p><strong>Total: $ <span id="total">0</span> </strong></p>
-           <button id="command" onclick="commander()">Commander</button>
-           </section>
+    <div class="header-icons">
+      <a href="#" onclick="showMessage('Bientôt !', 'La recherche sera bientôt disponible.', '🔍')"><i
+          class="fas fa-search"></i></a>
 
-           <!--Galerie-->
-           <section id="galerie">
-            <h2>BIENVENUE DANS NOTRE PETIT MONDE DE SAVEURS</h2>
-            <div class="carousel" id="carrousel">
-         <div> <img src="assets/pict/IMG-20250712-WA0074 - Copie.jpg"  class="active" alt ="image 1"></div>
-         <div> <img src="assets/pict/IMG-20250714-WA0057.jpg"     class="active" alt="image 2"></div>
-        <div><img src="assets/pict/IMG-20250714-WA0208.jpg" class="active"  alt="image 3"></div>
-          <div><img src="assets/pict/IMG-20250714-WA0188.jpg" alt=""></div>
-          <div><img src="assets/pict/IMG-20250714-WA0191.jpg" alt=""></div>
-          <div><img src="assets/pict/IMG-20250714-WA0201.jpg" alt=""></div>
-          <div><img src="assets/pict/IMG-20250714-WA0206.jpg" alt=""></div>
-          <div><img src="assets/pict/IMG-20250715-WA0000.jpg" alt=""></div>
-          <div><img src="assets/pict/IMG-20250715-WA0004.jpg" alt=""></div>
-           <div> <video src="assets/pict/VID-20250714-WA0053.mp4" controls ></video></div> 
-            <div> <video src="assets/pict/VID-20250714-WA0054.mp4" controls ></video></div> 
-             <div> <video src="assets/pict/VID-20250714-WA0055.mp4" controls ></video></div> 
- <button  > <a href="#menu">Commandez menant</a></button>
+      <a href="#" onclick="showMessage('Favoris', 'La liste de souhaits arrive bientôt.', '❤️')"><i
+          class="far fa-heart"></i></a>
+      <a href="#" onclick="document.getElementById('cart-modal').style.display = 'block'"><i
+          class="fas fa-shopping-bag"></i> <span id="cart-count">0</span></a>
+    </div>
+
+    <div class="burger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Beauté Cake</h1>
+        <p class="subtitle">Offrez plus qu'un goût; une expérience sucrée, raffinée et inoubliable à chaque bouchée.</p>
+        <div class="hero-buttons">
+          <button class="btn-primary" onclick="window.location.href='#menu'">Commander</button>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="assets/pict/hero_cake_chocolate_2.png" alt="Gâteau au Chocolat Vedette">
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="features">
+    <div class="feature-item">
+      <i class="fas fa-shipping-fast"></i>
+      <h3>Livraison & Retour</h3>
+      <p>Si vos gâteaux ne sont pas parfaits, contactez-nous dans les 24h.</p>
+    </div>
+    <div class="feature-item">
+      <i class="fas fa-shield-alt"></i>
+      <h3>Paiement Sécurisé</h3>
+      <p>Payez avec les méthodes les plus populaires et sécurisées.</p>
+    </div>
+    <div class="feature-item">
+      <i class="fas fa-shopping-cart"></i>
+      <h3>Achetez en Confiance</h3>
+      <p>Protection de l'acheteur de la commande à la livraison.</p>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section id="menu">
+    <h2 class="section-title">Nos Délices Sucrés</h2>
+
+    <div class="filters">
+      <button class="filter-btn active" onclick="filterSelection('all')">Tout</button>
+      <button class="filter-btn" onclick="filterSelection('gateau')">Gâteaux</button>
+      <button class="filter-btn" onclick="filterSelection('biscuit')">Biscuits</button>
+      <button class="filter-btn" onclick="filterSelection('galette')">Galettes</button>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+      <!-- GATEAUX -->
+      <div class="product-card gateau">
+        <div class="product-img-wrapper">
+          <img src="assets/pict/IMG-20250714-WA0192.jpg" alt="Gâteau Anniversaire">
+        </div>
+        <h3 class="product-title">Gâteau Anniversaire</h3>
+        <p class="product-price">$15.00</p>
+        <button class="btn-primary" onclick="addToCart('Gâteau Anniversaire', 15, this)">Ajouter au Panier</button>
+      </div>
+      <div class="product-card gateau">
+        <div class="product-img-wrapper">
+          <img src="assets/pict/IMG-20250714-WA0175.jpg" alt="Gâteau Enfant">
+        </div>
+        <h3 class="product-title">Gâteau Anniversaire Enfant</h3>
+        <p class="product-price">$20.00</p>
+        <button class="btn-primary" onclick="addToCart('Gâteau Enfant', 20, this)">Ajouter au Panier</button>
+      </div>
+      <div class="product-card gateau">
+        <div class="product-img-wrapper">
+          <img src="assets/pict/IMG-20250714-WA0059.jpg" alt="Gâteau Chocolat Noir">
+        </div>
+        <h3 class="product-title">Gâteau Chocolat Noir</h3>
+        <p class="product-price">$20.00</p>
+        <button class="btn-primary" onclick="addToCart('Gâteau Chocolat', 20, this)">Ajouter au Panier</button>
+      </div>
+      <div class="product-card gateau">
+        <div class="product-img-wrapper">
+          <img src="assets/pict/IMG-20250714-WA0176 - Copie.jpg" alt="Gâteau Mariage">
+        </div>
+        <h3 class="product-title">Gâteau Mariage</h3>
+        <p class="product-price">$15.00</p>
+        <button class="btn-primary" onclick="addToCart('Gâteau Mariage', 15, this)">Ajouter au Panier</button>
+      </div>
+
+      <!-- BISCUITS -->
+      <div class="product-card biscuit">
+        <div class="product-img-wrapper">
+          <img src="assets/pict/Screenshot_20250802-210449_1.png" alt="Biscuit Beurre">
+        </div>
+        <h3 class="product-title">Biscuit au Beurre</h3>
+        <p class="product-price">$5.00 (10 pcs)</p>
+        <button class="btn-primary" onclick="addToCart('Biscuit Beurre', 5, this)">Ajouter au Panier</button>
+      </div>
+      <div class="product-card biscuit">
+        <div class="product-img-wrapper">
+          <img src="assets/pict/Screenshot_20250802-210538_1.png" alt="Sablés">
+        </div>
+        <h3 class="product-title">Biscuits Sablés</h3>
+        <p class="product-price">$10.00 (10 pcs)</p>
+        <button class="btn-primary" onclick="addToCart('Biscuits Sablés', 10, this)">Ajouter au Panier</button>
+      </div>
+      <div class="product-card biscuit">
+        <div class="product-img-wrapper">
+          <img src="assets/pict/Screenshot_20250802-222302 - Copie.png" alt="Biscuit Chocolat">
+        </div>
+        <h3 class="product-title">Biscuit Chocolat</h3>
+        <p class="product-price">$5.00</p>
+        <button class="btn-primary" onclick="addToCart('Biscuit Chocolat', 5, this)">Ajouter au Panier</button>
+      </div>
+      <div class="product-card biscuit">
+        <div class="product-img-wrapper">
+          <img src="assets/pict/Screenshot_20250802-210428.png" alt="Biscuit Nzuri">
+        </div>
+        <h3 class="product-title">Biscuit Nzuri</h3>
+        <p class="product-price">$2.00 (5 pcs)</p>
+        <button class="btn-primary" onclick="addToCart('Biscuit Nzuri', 2, this)">Ajouter au Panier</button>
+      </div>
+
+      <!-- GALETTES -->
+      <div class="product-card galette">
+        <div class="product-img-wrapper">
+          <img src="assets/pict/Screenshot_20250802-222825.png" alt="Galette Triangle">
+        </div>
+        <h3 class="product-title">Galette Triangle</h3>
+        <p class="product-price">$5.00 (10 pcs)</p>
+        <button class="btn-primary" onclick="addToCart('Galette Triangle', 5, this)">Ajouter au Panier</button>
+      </div>
+      <div class="product-card galette">
+        <div class="product-img-wrapper">
+          <img src="assets/pict/Screenshot_20250802-222513.png" alt="Galette Biscuit">
+        </div>
+        <h3 class="product-title">Galette Biscuit</h3>
+        <p class="product-price">$10.00 (5 pcs)</p>
+        <button class="btn-primary" onclick="addToCart('Galette Biscuit', 10, this)">Ajouter au Panier</button>
+      </div>
+      <div class="product-card galette">
+        <div class="product-img-wrapper">
+          <img src="assets/pict/Screenshot_20250802-222627.png" alt="Galette Chocolat">
+        </div>
+        <h3 class="product-title">Galette Chocolat</h3>
+        <p class="product-price">$2.50</p>
+        <button class="btn-primary" onclick="addToCart('Galette Chocolat', 2.5, this)">Ajouter au Panier</button>
+      </div>
+      <div class="product-card galette">
+        <div class="product-img-wrapper">
+          <img src="assets/pict/Screenshot_20250802-222641.png" alt="Galette Fraise">
+        </div>
+        <h3 class="product-title">Galette Fraise</h3>
+        <p class="product-price">$3.00</p>
+        <button class="btn-primary" onclick="addToCart('Galette Fraise', 3, this)">Ajouter au Panier</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMO SECTION -->
+  <section id="promo">
+    <div class="carousel-container">
+      <!-- Slide 1 -->
+      <div class="carousel-slide fade active">
+        <div class="promo-container">
+          <div class="promo-text">
+            <h2>Élégance Nuptiale</h2>
+            <p>Ce gâteau d'anniversaire de mariage incarne l'amour éternel. Une création raffinée pour célébrer vos
+              moments les plus précieux avec douceur et élégance.</p>
+            <button class="btn-primary" onclick="window.location.href='#menu'">Commander</button>
           </div>
-        </section>
+          <div class="promo-image">
+            <img src="assets/pict/IMG-20250727-WA0303 (2).jpg" alt="Gâteau Anniversaire de Mariage">
+          </div>
+        </div>
+      </div>
 
-        <section  id="contact">
-          <div class="part">
-   <h3 >Beauté Cake le meilleur de tout le temps</h3>
-  </br>
-</br>
-  <div>
-    <span > &#x1F4DE; Numéro de téléphone : </span>
-   +243 854832846
-</div>
-<div>
-    <span>&#x2709; Notre mail: </span>
-    beautecake@gmail.com
-</div>
-<div>
-    <span >&#x1F4CD; Notre adresse: </span>
-    Bukavu
-</div>
-</div>
-<div class="parti">
-<img src="assets/pict/IMG-20240125-WA0013.jpg" alt="" >
-<h4>Votre cheffe en patissérie</h4>
-</div>
-            <div class="contact-container">
-              <h2>Contactez-nous</h2>
-                <form id="contact-form" novalidate method="POST" action="ajout.php" >
-                    <div class="form-control">
-                        <input type="text" id="name" name="name" 
-                        placeholder="Votre nom" required>
-                        </div>
+      <!-- Slide 2 -->
+      <div class="carousel-slide fade">
+        <div class="promo-container">
+          <div class="promo-text">
+            <h2>Honneur & Succès</h2>
+            <p>Félicitations au nouveau Docteur ! Un gâteau sur mesure pour célébrer des années de travail acharné et
+              une réussite méritée. Le goût de la victoire.</p>
+            <button class="btn-primary" onclick="window.location.href='#menu'">Commander</button>
+          </div>
+          <div class="promo-image">
+            <img src="assets/pict/dfa80ce851f66a242a028f9bdfba5747.jpg" alt="Gâteau Docteur">
+          </div>
+        </div>
+      </div>
 
-                        <div class="form-control">
-                        <input type="email" id="email" name="email" 
-                        placeholder="Votre email" required>
+      <!-- Navigation Dots only -->
+      <div class="dots-container">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </div>
+  </section>
 
-                       
-
-                    </div>
-                    <div class="form-control">
-                        <input type="tel" id="num" name="num" 
-                        placeholder="Votre numéro de téléphone" required>
-
-                      
-
-                    </div>
-                              
-                    <div class="form-control">
-                        <textarea id="message" name="message" rows="5" 
-                        placeholder="Votre message" required></textarea>
-
-                        
-                    </div>
-                    
-                    <button type="submit">Envoyer</button>
-
-                </form>
-                 
-                </div>
-          
+  <!-- CONTACT / FOOTER SECTION -->
+  <section id="contact">
+    <div class="features" style="background: transparent; padding-top: 0;">
+      <div class="feature-item">
+        <h3>Contactez-nous :</h3>
+        <p>+243 854832846 | Bukavu</p>
+        <br>
+        <button class="btn-primary" onclick="window.location.href='mailto:beautecake@gmail.com'">Envoyer un
+          Email</button>
+      </div>
+    </div>
+  </section>
 
 
-          
-        </section>
-    </main>
 
-     <script src="iziToast.min (1).js"></script>
-    <script src="style.js" ></script>
-    <footer>
-             <p id="footer">Copyright &copy; 2025 harmy-beauté-cake</p>  
-        </footer>
+  <footer id="footer">
+    <p>Copyright &copy; 2026. Made by harmy. Tous droits réservés.
+
+    </p>
+  </footer>
+
+  <!-- CART MODAL -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-cart" onclick="document.getElementById('cart-modal').style.display='none'">&times;</span>
+      <h2>Votre Panier</h2>
+      <div id="cart-items">
+        <p>Votre panier est vide.</p>
+      </div>
+      <div class="cart-total">
+        <h3>Total : $<span id="total-price">0</span></h3>
+      </div>
+      <button class="btn-primary" onclick="checkoutWhatsApp()">Commander sur WhatsApp</button>
+    </div>
+  </div>
+
+
+
+  <!-- INFO MODAL -->
+  <div id="info-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-cart" onclick="document.getElementById('info-modal').style.display='none'">&times;</span>
+      <div class="info-icon" id="info-icon">🔔</div>
+      <h2 class="info-title" id="info-title">Information</h2>
+      <p class="info-message" id="info-text">Message ici...</p>
+      <button class="btn-primary" onclick="document.getElementById('info-modal').style.display='none'">D'accord</button>
+    </div>
+  </div>
+
+  <!-- CONFIRM MODAL -->
+  <div id="confirm-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-cart" onclick="closeConfirm()">&times;</span>
+      <div class="info-icon"></div>
+      <h2 class="info-title">Ajouter au panier ?</h2>
+      <p class="info-message">Voulez-vous ajouter ce délice à votre sélection gourmande ?</p>
+      <div class="modal-buttons">
+        <button class="btn-primary" id="confirm-yes">Oui, j'en veux !</button>
+        <button class="btn-secondary-outline" onclick="closeConfirm()">Pas maintenant</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CART IZI TOAST -->
+  <script src="iziToast.min (1).js"></script>
+
+  <!-- SCRIPT -->
+  <!-- SCRIPT -->
+  <script src="style.js"></script>
 </body>
- 
+
 </html>

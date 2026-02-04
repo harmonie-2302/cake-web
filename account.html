@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Compte - Beauté Cake</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        .account-container {
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .profile-icon {
+            font-size: 60px;
+            color: var(--primary-color);
+            margin-right: 20px;
+        }
+
+        .order-card {
+            border: 1px solid #eee;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            background: #fafafa;
+        }
+
+        .order-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .order-items {
+            list-style: none;
+            padding: 0;
+            margin-left: 10px;
+            font-size: 0.9rem;
+        }
+
+        .logout-btn {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER (Simplified) -->
+    <header>
+        <div class="logo">
+            <img src="assets/pict/harm.png" alt="Logo">
+            <h1>Mon Espace</h1>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Retour Boutique</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="account-container">
+        <div class="profile-header">
+            <i class="far fa-user-circle profile-icon"></i>
+            <div>
+                <h2 id="user-name">Chargement...</h2>
+                <p id="user-email">...</p>
+            </div>
+            <button class="logout-btn" onclick="logout()">Déconnexion</button>
+        </div>
+
+        <h3>📚 Mes Commandes Passées</h3>
+        <div id="order-list">
+            <p>Aucune commande pour le moment.</p>
+        </div>
+    </div>
+
+    <script>
+        // Check Auth
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (!user) {
+            window.location.href = 'login.html';
+        } else {
+            document.getElementById('user-name').innerText = user.username;
+            document.getElementById('user-email').innerText = user.email || "Invité";
+        }
+
+        // Load Orders
+        const orders = JSON.parse(localStorage.getItem('orders')) || [];
+        const orderList = document.getElementById('order-list');
+
+        if (orders.length > 0) {
+            orderList.innerHTML = '';
+            // Show newest first
+            orders.reverse().forEach(order => {
+                let itemsHtml = order.items.map(i => `<li>- ${i.name} ($${i.price})</li>`).join('');
+
+                let html = `
+                <div class="order-card">
+                    <div class="order-header">
+                        <span>📅 ${order.date}</span>
+                        <span>Total: $${order.total}</span>
+                    </div>
+                    <ul class="order-items">
+                        ${itemsHtml}
+                    </ul>
+                </div>`;
+                orderList.innerHTML += html;
+            });
+        }
+
+        function logout() {
+            localStorage.removeItem('user');
+            window.location.href = 'login.html';
+        }
+    </script>
+
+</body>
+
+</html>
